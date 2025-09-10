@@ -15,6 +15,7 @@ int main() {
     }
 
     for (const char c : s) {
+        // if (!isprint(c) || isspace(c)) {
         if (c < 33 || c > 126) {
             std::cout << "NO";
             return 0;
